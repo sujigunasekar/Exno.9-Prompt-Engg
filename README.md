@@ -77,86 +77,82 @@ Tools/LLMs for Video Generation:
 -Excels in rendering natural scenery and atmospheric conditions.
 
 # Prompting Techniques
-### 1. Simple Prompts
-->Description: Short text inputs describing basic environmental elements.
+## 1. Simple Prompt
+Original: "Majestic ancient forest towering trees"
+Category: Simple Prompt
+Refined Example:
 
-->Examples:
+"A towering ancient forest with shafts of sunlight piercing through the dense green canopy."
 
-"A river flowing through a forest."
+## Tool Effectiveness:
 
-"Rain falling on green leaves."
+Runway ML Gen-2: Good depth and nature textures.
 
-->Tool Effectiveness:
+Make-A-Video: Can enhance lighting and mood.
 
--Runway ML Gen-2: Produces recognizable nature visuals.
+Imagen Video: Smooth tree movement and light effects.
 
--Make-A-Video: Generates simple yet artistic interpretations.
+## 2. Detailed Prompt
+Original: "Country Road in Summer with car"
+Category: Detailed Prompt
+Refined Example:
 
--Imagen Video: Realistic motion but limited detail.
+"A lone car driving down a sunlit country road lined with wildflowers and open fields under a bright blue sky."
 
-### 2. Detailed Prompts
-->Description: Elaborate inputs including weather, terrain, wildlife, and mood.
+## Tool Effectiveness:
 
-->Examples:
+Runway ML Gen-2: Can handle road and car dynamics.
 
-"A tiger walking through a misty rainforest in the early morning light."
+Make-A-Video: Strong at conveying seasonal mood.
 
-"An aerial view of a solar-powered city surrounded by green hills during sunset."
+Imagen Video: Accurate car movement and environmental flow.
 
-->Tool Effectiveness:
+## 3. Stylistic Prompt
+Original: "Black and white images documentary like images"
+Category: Stylistic Prompt
+Refined Example:
 
--Runway ML Gen-2: Captures nuanced environmental detail.
+"A black-and-white documentary-style scene of an old fisherman preparing his boat at dawn."
 
--Make-A-Video: Creates vivid, imaginative eco-scenes.
+## Tool Effectiveness:
 
--Imagen Video: High spatial-temporal accuracy and detail.
+Runway ML Gen-2: Adds grain and tone well.
 
-### 3. Stylistic Prompts
-->Description: Prompts that reflect visual art styles or cinematic tones.
+Make-A-Video: Very expressive for storytelling.
 
-->Examples:
+Imagen Video: Excellent realism in monochrome.
 
-"A watercolor animation of spring blossoms falling in a garden."
+## 4. Detailed / Stylistic Hybrid Prompt
+Original: "Surreal floating island with waterfall"
+Category: Detailed + Stylistic Prompt
+Refined Example:
 
-"A documentary-style black-and-white clip showing ocean pollution."
+"A glowing, surreal floating island with a waterfall cascading into the clouds, with magical plants and birds flying around it."
 
-->Tool Effectiveness:
+## Tool Effectiveness:
 
--Runway ML Gen-2: Can replicate visual styles to an extent.
+Runway ML Gen-2: Handles surreal fantasy settings well.
 
--Make-A-Video: Excels in imaginative and stylized outputs.
+Make-A-Video: Excels in creative and dreamlike visuals.
 
--Imagen Video: Maintains style with natural movement.
+Imagen Video: Realistic motion, limited on extreme surrealism.
 
-### 4. Iterative Refinement Prompts
-->Description: Improving prompts step by step to enhance realism or mood.
+## 5. Simple Prompt (with optional image refinement)
+Original: "Dog image"
+Category: Simple Prompt (or Hybrid if paired with an image)
+Refined Example:
 
-->Example:
+"A playful golden retriever running across a grassy field on a sunny afternoon."
 
-Initial: "A bird flying."
+## Tool Effectiveness:
 
-Refined: "A seagull gliding over ocean waves during sunrise with orange light reflecting on the water."
+Runway ML Gen-2: Handles animals with recognizable detail.
 
-->Tool Effectiveness:
+Make-A-Video: Adds personality and liveliness.
 
-All Tools: Support refinement for more accurate and polished results.
+Imagen Video: Smooth and accurate motion for animals.
 
-### 5. Hybrid Prompts (Text + Image)
-->Description: Text descriptions combined with reference images of landscapes or ecosystems.
 
-->Example:
-
-Text: "A waterfall cascading into a forest pool surrounded by mossy rocks."
-
-Image: Reference photo of a tropical waterfall.
-
-->Tool Effectiveness:
-
--Runway ML Gen-2: Effective with both text and image inputs.
-
--Make-A-Video: Blends text and visual cues creatively.
-
--Imagen Video: Closely follows input image style and structure.
 
 # Impact of Prompt Structures on Video Quality
 | **Prompt Type**      | **Quality**        | **Coherence** | **Style**         | **Recommended Tool**          |
@@ -169,41 +165,119 @@ Image: Reference photo of a tropical waterfall.
 
 
 # Optimization Strategies for Prompts
-1.Clarity and Specificity:
+## 1. Surreal Floating Island with Waterfall
+→ Optimized Prompt:
 
-Example: "A dense jungle with sunlight filtering through leaves and monkeys jumping between trees."
+"A surreal floating island covered in glowing moss, with a tall waterfall spilling into clouds below, birds circling under a pastel sky – cinematic fantasy style, wide shot."
 
-2.Leverage Tool Strengths:
+Category: Detailed / Stylistic
 
-Runway ML Gen-2: Best for simple, quick environmental scenes.
+Style: Fantasy / Cinematic
 
-Make-A-Video: Ideal for dreamy and creative nature visuals.
+Camera Angle: Aerial or wide angle
 
-Imagen Video: Perfect for realistic environmental simulations.
+Best Tools:
 
-E3.xperiment with Styles:
+Make-A-Video: For stylized visuals
 
-Try prompts like “eco-documentary,” “oil painting,” or “animated infographic.”
+Runway ML Gen-2: For fantasy landscapes
 
-4.Iterative Approach:
+Imagen Video: Smooth motion, some surreal limitations
 
-Generate, evaluate, refine—especially for climate change visuals.
+## 2. Black and White Documentary-Style Images
+→ Optimized Prompt:
 
-5.Incorporate Visual References:
+"Black and white documentary-style footage of a fisherman rowing across a foggy river at dawn – handheld camera look, grainy vintage style."
 
-Use real-world landscapes or satellite images to guide the AI.
+Category: Stylistic
 
-# Conclusion
-Different prompting techniques significantly affect the quality, coherence, and artistic value of AI-generated environmental videos. Tools like Runway ML Gen-2, Meta’s Make-A-Video, and Google’s Imagen Video offer unique strengths. Detailed and hybrid prompts produce the most compelling nature visuals, while iterative refinement helps tailor outputs to environmental storytelling. Choosing the right technique for the right tool unlocks the full creative potential of AI in raising awareness about our planet.
+Style: Vintage / Monochrome / Documentary
+
+Camera Angle: Handheld or medium shot
+
+Best Tools:
+
+Make-A-Video: Excellent for stylistic interpretation
+
+Runway ML Gen-2: Adds filmic tone and texture
+
+Imagen Video: Realistic motion, strong grayscale rendering
+
+## 3. Majestic Ancient Forest with Towering Trees
+→ Optimized Prompt:
+
+"A majestic ancient forest with enormous, moss-covered trees and soft light filtering through mist – nature documentary style, slow upward pan."
+
+Category: Simple to Detailed
+
+Style: Realistic / Natural
+
+Camera Angle: Slow vertical pan or static wide shot
+
+Best Tools:
+
+Runway ML Gen-2: Good forest structure
+
+Imagen Video: Realistic environmental motion
+
+Make-A-Video: Adds emotion and depth
+
+## 4. Country Road in Summer with Car
+→ Optimized Prompt:
+
+"A red car driving down a quiet country road surrounded by tall grass and sunflowers under a clear blue summer sky – drone shot, warm tones."
+
+Category: Detailed
+
+Style: Natural / Seasonal
+
+Camera Angle: Aerial or tracking shot
+
+Best Tools:
+
+Imagen Video: Best for realistic motion (car, road)
+
+Runway ML Gen-2: Can do landscapes and roads well
+
+Make-A-Video: Great for seasonal vibe
+
+## 5. Dog
+→ Optimized Prompt:
+
+"A playful golden retriever running through a flower field on a sunny afternoon, ears flapping and tail wagging – slow-motion, natural light."
+
+Category: Simple
+
+Style: Realistic / Emotional
+
+Camera Angle: Low-angle tracking or medium shot
+
+Best Tools:
+
+Imagen Video: Great at animal motion
+
+Runway ML Gen-2: Captures behavior and textures
+
+Make-A-Video: Adds energy and playfulness
+
+## ✅ Summary Table
+
+| Prompt Topic                | Category           | Style             | Best Camera Angle  | Best Tool Fit                |
+| --------------------------- | ------------------ | ----------------- | ------------------ | ---------------------------- |
+| Floating Island + Waterfall | Detailed/Stylistic | Fantasy/Cinematic | Aerial / Wide      | Make-A-Video, Runway, Imagen |
+| Black & White Documentary   | Stylistic          | Vintage/Realism   | Handheld / Medium  | Make-A-Video, Runway         |
+| Ancient Forest              | Simple/Detailed    | Natural           | Upward pan / Wide  | Imagen, Runway, Make-A-Video |
+| Country Road with Car       | Detailed           | Natural           | Aerial / Tracking  | Imagen, Runway, Make-A-Video |
+| Dog                         | Simple             | Realistic         | Low angle / Medium | Imagen, Runway, Make-A-Video |
+
 
 # EXPECTED OUTPUT:
 📁 Google Drive link containing:
+
 https://drive.google.com/drive/folders/1L2ydiTdHQDw5o_qJBlKgI3n59aWsr31D?usp=sharing
+
 Prompt-to-video comparison snapshots
 
-Prompt logs and observations
 
 # RESULT:
 Thus, the experiment successfully explored prompting techniques for AI-based nature video generation, demonstrating how structured and creative inputs lead to meaningful and impactful environmental video content.
-## Conclusion:
-By using detailed and well-crafted prompts, text-to-Video generation models can be effective in reproducing an Video closely. The quality of the generated Video depends on how accurately the prompt describes the Video's key elements. The experiment demonstrates the importance of prompt refinement and iteration when working with AI tools to achieve desired outcomes. With practice, the model can generate Videos that closely match real-world visuals, which is useful for creative and practical applications.
