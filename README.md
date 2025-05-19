@@ -137,7 +137,7 @@ Make-A-Video: Excels in creative and dreamlike visuals.
 
 Imagen Video: Realistic motion, limited on extreme surrealism.
 
-## 5. Simple Prompt (with optional image refinement)
+## 5. Iterative Refinement Prompt (with optional image refinement)
 Original: "Dog image"
 Category: Simple Prompt (or Hybrid if paired with an image)
 Refined Example:
@@ -241,12 +241,12 @@ Runway ML Gen-2: Can do landscapes and roads well
 
 Make-A-Video: Great for seasonal vibe
 
-## 5. Dog
+## 5. Dog image
 → Optimized Prompt:
 
 "A playful golden retriever running through a flower field on a sunny afternoon, ears flapping and tail wagging – slow-motion, natural light."
 
-Category: Simple
+Category: Iterative Refinement
 
 Style: Realistic / Emotional
 
